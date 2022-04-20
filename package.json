@@ -1,0 +1,15 @@
+{
+  "name": "sign-in-sign-up",
+  "version": "1.0.0",
+  "description": "training project - sign in and sign up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sign-in",
+    "sign-up"
+  ],
+  "author": "Oleg83-IT",
+  "license": "ISC"
+}
