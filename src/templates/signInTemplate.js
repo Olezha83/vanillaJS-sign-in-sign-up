@@ -1,10 +1,12 @@
 export const signInTemplate = `
   <div class="wrapper">
     <p>Enter your login</p>
-    <input id="login" type="text">
+    <input id="login" />
     <p>Enter your password</p>
-    <input id="password" type="password">
-    <button id="submit">Sign in</button>
+    <input id="password" type="password" />
+    <p id="button-paragraph">
+      <button id="submit">Sign in</button>
+    </p>  
   </div>
 
   <style>
@@ -13,10 +15,15 @@ export const signInTemplate = `
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 344px;
+      width: 240px;
       box-shadow: 0 0 4px #0007;
       padding: 8px;
       border-radius: 4px;
+    }
+
+    #button-paragraph {
+      text-align: center;
+      margin-top: 16px;
     }
     
     p {
@@ -30,7 +37,7 @@ export const signInTemplate = `
     }
     
     input {
-      width: 240px;
+      width: 222px;
     }
     
     input, button {

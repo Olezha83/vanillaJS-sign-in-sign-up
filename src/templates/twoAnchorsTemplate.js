@@ -9,7 +9,7 @@ export const twoAnchorsTemplate = `
       text-align: center;
       border-bottom: 1px solid #000;
       padding-bottom: 5px;
-      width: 360px;
+      width: 256px;
       margin: 0 auto;
     }
     

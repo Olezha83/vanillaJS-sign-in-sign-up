@@ -1,24 +1,45 @@
 export const signUpTemplate = `
   <div class="wrapper">
     <p>Enter your login</p>
-    <input id="login" type="text">
+    <input id="login" />
     <p>Enter your password</p>
-    <input id="password" type="password">
+    <input id="password" type="password" />
     <p>Choose your avatar</p>
-    <input id="avatar" type="file">
-    <button id="submit">Sign up</button>
+    <label>
+      <p id="label-text">Click here</p>
+      <input id="avatar" type="file" />
+    </label>
+    <p id="button-paragraph">
+      <button id="submit">Sign up</button>
+    </p>
   </div>
-
+  
   <style>
     .wrapper {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 344px;
+      width: 240px;
       box-shadow: 0 0 4px #0007;
       padding: 8px;
       border-radius: 4px;
+    }
+    
+    #button-paragraph {
+      text-align: center;
+      margin-top: 16px;
+    }
+    
+    #label-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #aaa;
     }
     
     p {
@@ -26,13 +47,13 @@ export const signUpTemplate = `
       margin-bottom: 4px;
       font-weight: 700;
     }
-
+    
     p:first-child {
       margin-top: 2px;
     }
-
+    
     input {
-      width: 240px;
+      width: 222px;
     }
     
     input, button {
@@ -40,17 +61,19 @@ export const signUpTemplate = `
       border-width: 1px;
       border-radius: 4px;
     }
-
-    button {
-      vertical-align: middle;
+    
+    label {
+      display: block;
+      position: relative;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 10px;
+      border: 1px inset #767676;
+      border-radius: 50%;
     }
-
-    input:last-of-type {
-      vertical-align: middle;
-    }
-
+    
     input[type="file"] {
-      padding: 0 16px 4px 0;
+      display: none;
     }
   </style>
 `
