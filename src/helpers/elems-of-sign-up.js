@@ -1,8 +1,9 @@
-let loginSignUp, passwordSignUp, avatarSignUp, submitSignUp
+let loginSignUp, loginErrorSignUp, passwordSignUp, avatarSignUp, submitSignUp
 
 export function getSignUpElems (shadow) {
-  [loginSignUp, passwordSignUp, avatarSignUp, submitSignUp] = [
+  [loginSignUp, loginErrorSignUp, passwordSignUp, avatarSignUp, submitSignUp] = [
     'login',
+    'login-error',
     'password',
     'avatar',
     'submit'
@@ -11,6 +12,7 @@ export function getSignUpElems (shadow) {
 
 export {
   loginSignUp,
+  loginErrorSignUp,
   passwordSignUp,
   avatarSignUp,
   submitSignUp

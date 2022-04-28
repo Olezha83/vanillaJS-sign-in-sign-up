@@ -1,9 +1,14 @@
 import {
   showSignIn,
   showSignUp
-} from "./switch-components";
+} from "./switch-components"
+
+import {
+  loginSignUpCallback
+} from "./loginSignUp-callback"
 
 export {
   showSignIn,
-  showSignUp
+  showSignUp,
+  loginSignUpCallback
 }

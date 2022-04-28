@@ -9,6 +9,7 @@ import {
 
 import {
   loginSignUp,
+  loginErrorSignUp,
   passwordSignUp,
   avatarSignUp,
   submitSignUp,
@@ -22,6 +23,10 @@ import {
   getSignInElems
 } from "./elems-of-sign-in"
 
+import {
+  validateLoginSignUp
+} from "./validateLoginSignUp"
+
 export {
   signUpElement,
   signInElement,
@@ -30,6 +35,7 @@ export {
   getTabs,
   getElems,
   loginSignUp,
+  loginErrorSignUp,
   passwordSignUp,
   avatarSignUp,
   submitSignUp,
@@ -37,5 +43,6 @@ export {
   loginSignIn,
   passwordSignIn,
   submitSignIn,
-  getSignInElems
+  getSignInElems,
+  validateLoginSignUp
 }

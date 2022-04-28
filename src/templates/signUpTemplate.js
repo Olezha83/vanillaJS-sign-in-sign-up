@@ -2,6 +2,10 @@ export const signUpTemplate = `
   <div class="wrapper">
     <p>Enter your login</p>
     <input id="login" />
+    <div id="login-error">
+      <p>This login is not available.</p>
+      <p>Choose another login</p>
+    </div>
     <p>Enter your password</p>
     <input id="password" type="password" />
     <p>Choose your avatar</p>
@@ -41,6 +45,21 @@ export const signUpTemplate = `
       text-align: center;
       color: #aaa;
     }
+
+    #login-error {
+      display: none;
+      border: 1px solid #f00;
+      padding: 0 4px;
+      margin: 4px 0;
+      background: #f004;
+    }
+    
+    #login-error>p {
+      text-align: center;
+      font-weight: normal;
+      margin: 0;
+      font-style: italic;
+    }
     
     p {
       margin-top: 8px;
@@ -70,6 +89,7 @@ export const signUpTemplate = `
       margin-bottom: 10px;
       border: 1px inset #767676;
       border-radius: 50%;
+      cursor: pointer;
     }
     
     input[type="file"] {

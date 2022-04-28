@@ -2,11 +2,16 @@ import { signUpTemplate } from "../templates"
 
 import {
   loginSignUp,
+  loginErrorSignUp,
   passwordSignUp,
   avatarSignUp,
   submitSignUp,
   getSignUpElems
 } from "../helpers"
+
+import {
+  loginSignUpCallback
+} from "../callbacks"
 
 class SignUp extends HTMLElement {
   constructor () {
@@ -15,6 +20,7 @@ class SignUp extends HTMLElement {
     this.wrapper = shadow.appendChild(document.createElement('main'))
     this.wrapper.innerHTML = signUpTemplate
     getSignUpElems(shadow)
+    loginSignUp.onblur = loginSignUpCallback
   }
 
   connectedCallback () {
