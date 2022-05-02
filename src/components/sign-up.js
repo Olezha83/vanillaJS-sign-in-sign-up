@@ -20,10 +20,10 @@ class SignUp extends HTMLElement {
     this.wrapper = shadow.appendChild(document.createElement('main'))
     this.wrapper.innerHTML = signUpTemplate
     getSignUpElems(shadow)
-    loginSignUp.onblur = loginSignUpCallback
   }
 
   connectedCallback () {
+    loginSignUp.onblur = loginSignUpCallback
     this.setAttribute('display', 'none')
   }
 
@@ -35,6 +35,10 @@ class SignUp extends HTMLElement {
     Object.assign(this.wrapper.style, {
       display: newVal
     })
+  }
+
+  disconnectedCallback () {
+    loginSignUp.onblur = null
   }
 }
 
