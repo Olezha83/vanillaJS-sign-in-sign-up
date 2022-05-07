@@ -1,21 +1,34 @@
 export const signUpTemplate = `
   <div class="wrapper">
-    <p>Enter your login</p>
+    <p class="field-heading">Enter your login</p>
     <input id="login" />
     <div id="login-error">
       <p>This login is not available.</p>
       <p>Choose another login</p>
     </div>
-    <p>Enter your password</p>
+    <p class="field-heading">Enter your password</p>
     <input id="password" type="password" />
-    <p>Choose your avatar</p>
+    <div id="password-info">
+      <p>Password rules:</p>
+      <ul>
+        <li><span>From 6 to 16 characters</span></li>
+        <li><span>Any English letters</span></li>
+        <li><span>At least one digit</span></li>
+        <li><span>At least one special symbol: !@#$%^&*</span></li>
+      </ul>
+    </div>
+    <div id="password-error">
+      <p>This password is incorrect.</p>
+      <p>See password rules above</p>
+    </div>
+    <p class="field-heading">Choose your avatar</p>
     <label>
-      <p id="label-text">Click here</p>
+      <span id="label-text">Click here</span>
       <input id="avatar" type="file" />
     </label>
-    <p id="button-paragraph">
+    <div id="button-paragraph">
       <button id="submit">Sign up</button>
-    </p>
+    </div>
   </div>
   
   <style>
@@ -32,7 +45,7 @@ export const signUpTemplate = `
     
     #button-paragraph {
       text-align: center;
-      margin-top: 16px;
+      margin: 16px 0 4px;
     }
     
     #label-text {
@@ -44,30 +57,53 @@ export const signUpTemplate = `
       text-transform: uppercase;
       text-align: center;
       color: #aaa;
+      font-weight: 700;
     }
 
-    #login-error {
+    #login-error, #password-error {
       display: none;
       border: 1px solid #f00;
-      padding: 0 4px;
       margin: 4px 0;
       background: #f004;
     }
-    
-    #login-error>p {
+
+    #login-error>p, #password-error>p {
       text-align: center;
-      font-weight: normal;
       margin: 0;
       font-style: italic;
     }
     
-    p {
+    #password-info {
+      display: none;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      padding: 4px;
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    #password-info p {
+      margin: 0;
+      font-style: italic;
+    }
+
+    #password-info ul {
+      padding-inline-start: 16px;
+      margin: 4px 0 0;
+    }
+
+    #password-info span {
+      position: relative;
+      left: -3px;
+    }
+    
+    .field-heading {
       margin-top: 8px;
       margin-bottom: 4px;
       font-weight: 700;
     }
     
-    p:first-child {
+    .field-heading:first-child {
       margin-top: 2px;
     }
     

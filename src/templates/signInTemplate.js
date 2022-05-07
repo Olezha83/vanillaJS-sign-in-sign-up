@@ -1,12 +1,12 @@
 export const signInTemplate = `
   <div class="wrapper">
-    <p>Enter your login</p>
+    <p class="field-heading">Enter your login</p>
     <input id="login" />
-    <p>Enter your password</p>
+    <p class="field-heading">Enter your password</p>
     <input id="password" type="password" />
-    <p id="button-paragraph">
+    <div id="button-paragraph">
       <button id="submit">Sign in</button>
-    </p>  
+    </div>  
   </div>
 
   <style>
@@ -23,16 +23,16 @@ export const signInTemplate = `
 
     #button-paragraph {
       text-align: center;
-      margin-top: 16px;
+      margin: 16px 0 4px;
     }
     
-    p {
+    .field-heading {
       margin-top: 8px;
       margin-bottom: 4px;
       font-weight: 700;
     }
 
-    p:first-child {
+    .field-heading:first-child {
       margin-top: 2px;
     }
     
