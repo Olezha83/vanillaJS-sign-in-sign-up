@@ -2,7 +2,6 @@ import { signUpTemplate } from "../templates"
 
 import {
   loginSignUp,
-  loginErrorSignUp,
   passwordSignUp,
   avatarSignUp,
   submitSignUp,
@@ -10,7 +9,9 @@ import {
 } from "../helpers"
 
 import {
-  loginSignUpCallback
+  loginSignUpCallback,
+  passwordSignUpOnFocusCallback,
+  passwordSignUpErrorCallback
 } from "../callbacks"
 
 class SignUp extends HTMLElement {
@@ -24,6 +25,8 @@ class SignUp extends HTMLElement {
 
   connectedCallback () {
     loginSignUp.onblur = loginSignUpCallback
+    passwordSignUp.onfocus = passwordSignUpOnFocusCallback
+    passwordSignUp.onblur = passwordSignUpErrorCallback
     this.setAttribute('display', 'none')
   }
 
@@ -39,6 +42,8 @@ class SignUp extends HTMLElement {
 
   disconnectedCallback () {
     loginSignUp.onblur = null
+    passwordSignUp.onfocus = null
+    passwordSignUp.onblur = null
   }
 }
 

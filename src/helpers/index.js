@@ -11,6 +11,8 @@ import {
   loginSignUp,
   loginErrorSignUp,
   passwordSignUp,
+  passwordSignUpInfo,
+  passwordErrorSignUp,
   avatarSignUp,
   submitSignUp,
   getSignUpElems
@@ -37,6 +39,8 @@ export {
   loginSignUp,
   loginErrorSignUp,
   passwordSignUp,
+  passwordSignUpInfo,
+  passwordErrorSignUp,
   avatarSignUp,
   submitSignUp,
   getSignUpElems,

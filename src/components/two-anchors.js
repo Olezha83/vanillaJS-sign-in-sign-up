@@ -1,10 +1,6 @@
 import { twoAnchorsTemplate } from "../templates";
 
 import {
-  signUpElement,
-  signInElement,
-  signUpTab,
-  signInTab,
   getTabs,
   getElems
 } from "../helpers"
