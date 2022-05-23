@@ -4,7 +4,10 @@ let
   passwordSignUp,
   passwordSignUpInfo,
   passwordErrorSignUp,
-  avatarSignUp,
+  avatarSelectSignUp,
+  avatarPictureSignUp,
+  avatarErrorSignUpNF,
+  avatarErrorSignUpIFT,
   submitSignUp
 
 export function getSignUpElems (shadow) {
@@ -14,7 +17,10 @@ export function getSignUpElems (shadow) {
     passwordSignUp,
     passwordSignUpInfo,
     passwordErrorSignUp,
-    avatarSignUp,
+    avatarSelectSignUp,
+    avatarPictureSignUp,
+    avatarErrorSignUpNF,
+    avatarErrorSignUpIFT,
     submitSignUp
   ] = [
     'login',
@@ -22,7 +28,10 @@ export function getSignUpElems (shadow) {
     'password',
     'password-info',
     'password-error',
-    'avatar',
+    'avatar-select',
+    'avatar-picture',
+    'avatar-error-no-file',
+    'avatar-error-illegal-file-type',
     'submit'
   ].map(id => shadow.querySelector(`#${id}`))
 }
@@ -33,6 +42,9 @@ export {
   passwordSignUp,
   passwordSignUpInfo,
   passwordErrorSignUp,
-  avatarSignUp,
+  avatarSelectSignUp,
+  avatarPictureSignUp,
+  avatarErrorSignUpNF,
+  avatarErrorSignUpIFT,
   submitSignUp
 }

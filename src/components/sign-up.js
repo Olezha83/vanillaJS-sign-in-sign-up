@@ -3,7 +3,7 @@ import { signUpTemplate } from "../templates"
 import {
   loginSignUp,
   passwordSignUp,
-  avatarSignUp,
+  avatarSelectSignUp,
   submitSignUp,
   getSignUpElems
 } from "../helpers"

@@ -6,6 +6,7 @@ export const signUpTemplate = `
       <p>This login is not available.</p>
       <p>Choose another login</p>
     </div>
+
     <p class="field-heading">Enter your password</p>
     <input id="password" type="password" />
     <div id="password-info">
@@ -21,11 +22,17 @@ export const signUpTemplate = `
       <p>This password is incorrect.</p>
       <p>See password rules above</p>
     </div>
+
     <p class="field-heading">Choose your avatar</p>
-    <label>
-      <span id="label-text">Click here</span>
-      <input id="avatar" type="file" />
-    </label>
+    <input id="avatar-select" type="file" />
+    <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" id="avatar-picture" alt="user avatar">
+    <div id="avatar-error-no-file">
+      <p>No file selected</p>
+    </div>
+    <div id="avatar-error-illegal-file-type">
+      <p>Illegal file type. Choose image file</p>
+    </div>
+
     <div id="button-paragraph">
       <button id="submit">Sign up</button>
     </div>
@@ -48,26 +55,24 @@ export const signUpTemplate = `
       margin: 16px 0 4px;
     }
     
-    #label-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      text-transform: uppercase;
-      text-align: center;
-      color: #aaa;
-      font-weight: 700;
+    #avatar-picture {
+      display: block;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 1px solid #767676;
+      border-radius: 50%;
     }
 
-    #login-error, #password-error {
+    #login-error, #password-error, #avatar-error-no-file, #avatar-error-illegal-file-type {
       display: none;
       border: 1px solid #f00;
       margin: 4px 0;
       background: #f004;
     }
 
-    #login-error>p, #password-error>p {
+    #login-error>p, #password-error>p, #avatar-error-no-file>p, #avatar-error-illegal-file-type>p {
       text-align: center;
       margin: 0;
       font-style: italic;
@@ -115,17 +120,6 @@ export const signUpTemplate = `
       padding: 4px 8px;
       border-width: 1px;
       border-radius: 4px;
-    }
-    
-    label {
-      display: block;
-      position: relative;
-      width: 130px;
-      height: 130px;
-      margin-bottom: 10px;
-      border: 1px inset #767676;
-      border-radius: 50%;
-      cursor: pointer;
     }
     
     input[type="file"] {

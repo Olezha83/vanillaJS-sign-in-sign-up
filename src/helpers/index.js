@@ -13,7 +13,10 @@ import {
   passwordSignUp,
   passwordSignUpInfo,
   passwordErrorSignUp,
-  avatarSignUp,
+  avatarSelectSignUp,
+  avatarPictureSignUp,
+  avatarErrorSignUpNF,
+  avatarErrorSignUpIFT,
   submitSignUp,
   getSignUpElems
 } from "./elems-of-sign-up"
@@ -41,12 +44,15 @@ export {
   passwordSignUp,
   passwordSignUpInfo,
   passwordErrorSignUp,
-  avatarSignUp,
+  avatarSelectSignUp,
+  avatarPictureSignUp,
+  avatarErrorSignUpNF,
+  avatarErrorSignUpIFT,
   submitSignUp,
   getSignUpElems,
   loginSignIn,
   passwordSignIn,
   submitSignIn,
   getSignInElems,
-  validateLoginSignUp
+  validateLoginSignUp,
 }
