@@ -24,11 +24,10 @@ export const signUpTemplate = `
     </div>
 
     <p class="field-heading">Choose your avatar</p>
+    <label for="avatar-select">
+      <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" id="avatar-picture" alt="user avatar">
+    </label>
     <input id="avatar-select" type="file" />
-    <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" id="avatar-picture" alt="user avatar">
-    <div id="avatar-error-no-file">
-      <p>No file selected</p>
-    </div>
     <div id="avatar-error-illegal-file-type">
       <p>Illegal file type. Choose image file</p>
     </div>
@@ -65,14 +64,14 @@ export const signUpTemplate = `
       border-radius: 50%;
     }
 
-    #login-error, #password-error, #avatar-error-no-file, #avatar-error-illegal-file-type {
+    #login-error, #password-error, #avatar-error-illegal-file-type {
       display: none;
       border: 1px solid #f00;
       margin: 4px 0;
       background: #f004;
     }
 
-    #login-error>p, #password-error>p, #avatar-error-no-file>p, #avatar-error-illegal-file-type>p {
+    #login-error>p, #password-error>p, #avatar-error-illegal-file-type>p {
       text-align: center;
       margin: 0;
       font-style: italic;

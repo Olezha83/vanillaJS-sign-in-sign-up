@@ -15,7 +15,6 @@ import {
   passwordErrorSignUp,
   avatarSelectSignUp,
   avatarPictureSignUp,
-  avatarErrorSignUpNF,
   avatarErrorSignUpIFT,
   submitSignUp,
   getSignUpElems
@@ -46,7 +45,6 @@ export {
   passwordErrorSignUp,
   avatarSelectSignUp,
   avatarPictureSignUp,
-  avatarErrorSignUpNF,
   avatarErrorSignUpIFT,
   submitSignUp,
   getSignUpElems,

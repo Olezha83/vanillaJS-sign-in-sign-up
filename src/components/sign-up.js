@@ -4,6 +4,7 @@ import {
   loginSignUp,
   passwordSignUp,
   avatarSelectSignUp,
+  avatarPictureSignUp,
   submitSignUp,
   getSignUpElems
 } from "../helpers"
@@ -11,7 +12,9 @@ import {
 import {
   loginSignUpCallback,
   passwordSignUpOnFocusCallback,
-  passwordSignUpErrorCallback
+  passwordSignUpErrorCallback,
+  avatarSignUpCallback,
+  avatarSignUpClearErrorCallback
 } from "../callbacks"
 
 class SignUp extends HTMLElement {
@@ -27,6 +30,10 @@ class SignUp extends HTMLElement {
     loginSignUp.onblur = loginSignUpCallback
     passwordSignUp.onfocus = passwordSignUpOnFocusCallback
     passwordSignUp.onblur = passwordSignUpErrorCallback
+    avatarSelectSignUp.onchange = event => {
+      avatarSignUpCallback(event.target.files[0], avatarPictureSignUp)
+    }
+    avatarSelectSignUp.onclick = avatarSignUpClearErrorCallback
     this.setAttribute('display', 'none')
   }
 
@@ -44,6 +51,8 @@ class SignUp extends HTMLElement {
     loginSignUp.onblur = null
     passwordSignUp.onfocus = null
     passwordSignUp.onblur = null
+    avatarSelectSignUp.onchange = null
+    avatarSelectSignUp.onclick = null
   }
 }
 
