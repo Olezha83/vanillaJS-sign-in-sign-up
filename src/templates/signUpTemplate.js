@@ -28,12 +28,12 @@ export const signUpTemplate = `
       <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" id="avatar-picture" alt="user avatar">
     </label>
     <input id="avatar-select" type="file" />
-    <div id="avatar-error-illegal-file-type">
+    <div id="avatar-error">
       <p>Illegal file type. Choose image file</p>
     </div>
 
     <div id="button-paragraph">
-      <button id="submit">Sign up</button>
+      <button id="submit" disabled>Sign up</button>
     </div>
   </div>
   
@@ -64,14 +64,14 @@ export const signUpTemplate = `
       border-radius: 50%;
     }
 
-    #login-error, #password-error, #avatar-error-illegal-file-type {
+    #login-error, #password-error, #avatar-error {
       display: none;
       border: 1px solid #f00;
       margin: 4px 0;
       background: #f004;
     }
 
-    #login-error>p, #password-error>p, #avatar-error-illegal-file-type>p {
+    #login-error>p, #password-error>p, #avatar-error>p {
       text-align: center;
       margin: 0;
       font-style: italic;

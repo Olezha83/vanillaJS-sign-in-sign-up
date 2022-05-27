@@ -15,7 +15,7 @@ import {
   passwordErrorSignUp,
   avatarSelectSignUp,
   avatarPictureSignUp,
-  avatarErrorSignUpIFT,
+  avatarErrorSignUp,
   submitSignUp,
   getSignUpElems
 } from "./elems-of-sign-up"
@@ -45,7 +45,7 @@ export {
   passwordErrorSignUp,
   avatarSelectSignUp,
   avatarPictureSignUp,
-  avatarErrorSignUpIFT,
+  avatarErrorSignUp,
   submitSignUp,
   getSignUpElems,
   loginSignIn,

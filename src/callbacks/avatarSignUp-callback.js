@@ -1,8 +1,8 @@
-import { avatarErrorSignUpIFT } from "../helpers";
+import { avatarErrorSignUp } from "../helpers";
 
 export function avatarSignUpCallback (file, picture) {
   if (file.type.indexOf('image')) {
-    Object.assign(avatarErrorSignUpIFT.style, {
+    Object.assign(avatarErrorSignUp.style, {
       display: 'block'
     })
   }
