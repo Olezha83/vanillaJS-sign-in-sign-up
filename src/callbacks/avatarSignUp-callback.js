@@ -1,4 +1,4 @@
-import { avatarErrorSignUp } from "../helpers";
+import { avatarErrorSignUp, validateForm } from "../helpers";
 
 export function avatarSignUpCallback (file, picture) {
   if (file.type.indexOf('image')) {
@@ -16,4 +16,6 @@ export function avatarSignUpCallback (file, picture) {
   }
 
   reader.readAsDataURL(file)
+
+  validateForm()
 }

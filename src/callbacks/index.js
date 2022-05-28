@@ -4,7 +4,7 @@ import { loginSignUpCallback } from "./loginSignUp-callback"
 
 import { passwordSignUpOnFocusCallback } from "./passwordSignUpOnFocus-callback"
 
-import { passwordSignUpErrorCallback } from "./passwordSignUpError-callback"
+import { passwordSignUpCallback } from "./passwordSignUp-callback"
 
 import { avatarSignUpCallback } from "./avatarSignUp-callback"
 
@@ -15,7 +15,7 @@ export {
   showSignUp,
   loginSignUpCallback,
   passwordSignUpOnFocusCallback,
-  passwordSignUpErrorCallback,
+  passwordSignUpCallback,
   avatarSignUpCallback,
   avatarSignUpClearErrorCallback
 }

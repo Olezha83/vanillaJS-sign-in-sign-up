@@ -12,7 +12,7 @@ import {
 import {
   loginSignUpCallback,
   passwordSignUpOnFocusCallback,
-  passwordSignUpErrorCallback,
+  passwordSignUpCallback,
   avatarSignUpCallback,
   avatarSignUpClearErrorCallback
 } from "../callbacks"
@@ -29,7 +29,7 @@ class SignUp extends HTMLElement {
   connectedCallback () {
     loginSignUp.onblur = loginSignUpCallback
     passwordSignUp.onfocus = passwordSignUpOnFocusCallback
-    passwordSignUp.onblur = passwordSignUpErrorCallback
+    passwordSignUp.onblur = passwordSignUpCallback
     avatarSelectSignUp.onchange = event => {
       avatarSignUpCallback(event.target.files[0], avatarPictureSignUp)
     }

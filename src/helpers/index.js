@@ -27,9 +27,9 @@ import {
   getSignInElems
 } from "./elems-of-sign-in"
 
-import {
-  validateLoginSignUp
-} from "./validateLoginSignUp"
+import { validateLoginSignUp } from "./validateLoginSignUp"
+
+import { validateForm } from "./validateForm"
 
 export {
   signUpElement,
@@ -53,4 +53,5 @@ export {
   submitSignIn,
   getSignInElems,
   validateLoginSignUp,
+  validateForm
 }

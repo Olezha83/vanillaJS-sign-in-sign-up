@@ -9,6 +9,6 @@ export const passwordSignUpOnFocusCallback = () => {
   })
   
   Object.assign(passwordErrorSignUp.style, {
-    display: 'none'
+    display: ''
   })
 }
