@@ -10,6 +10,8 @@ import { avatarSignUpCallback } from "./avatarSignUp-callback"
 
 import { avatarSignUpClearErrorCallback } from "./avatarSignUpClearError-callback"
 
+import { submitSignUpCallback } from "./submitSignUp-callback"
+
 export {
   showSignIn,
   showSignUp,
@@ -17,5 +19,6 @@ export {
   passwordSignUpOnFocusCallback,
   passwordSignUpCallback,
   avatarSignUpCallback,
-  avatarSignUpClearErrorCallback
+  avatarSignUpClearErrorCallback,
+  submitSignUpCallback
 }

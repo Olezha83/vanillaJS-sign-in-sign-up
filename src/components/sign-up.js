@@ -14,7 +14,8 @@ import {
   passwordSignUpOnFocusCallback,
   passwordSignUpCallback,
   avatarSignUpCallback,
-  avatarSignUpClearErrorCallback
+  avatarSignUpClearErrorCallback,
+  submitSignUpCallback
 } from "../callbacks"
 
 class SignUp extends HTMLElement {
@@ -34,6 +35,7 @@ class SignUp extends HTMLElement {
       avatarSignUpCallback(event.target.files[0], avatarPictureSignUp)
     }
     avatarSelectSignUp.onclick = avatarSignUpClearErrorCallback
+    submitSignUp.onclick = submitSignUpCallback
     this.setAttribute('display', 'none')
   }
 
@@ -53,6 +55,7 @@ class SignUp extends HTMLElement {
     passwordSignUp.onblur = null
     avatarSelectSignUp.onchange = null
     avatarSelectSignUp.onclick = null
+    submitSignUp.onclick = null
   }
 }
 
