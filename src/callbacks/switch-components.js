@@ -1,7 +1,4 @@
-import {
-  signUpElement,
-  signInElement
-} from "../helpers";
+import { signUpElement, signInElement } from "../helpers"
 
 export function showSignUp () {
   signUpElement.setAttribute('display', 'block')

@@ -17,6 +17,7 @@ import {
   avatarPictureSignUp,
   avatarErrorSignUp,
   submitSignUp,
+  congratsSignUp,
   getSignUpElems
 } from "./elems-of-sign-up"
 
@@ -47,6 +48,7 @@ export {
   avatarPictureSignUp,
   avatarErrorSignUp,
   submitSignUp,
+  congratsSignUp,
   getSignUpElems,
   loginSignIn,
   passwordSignIn,

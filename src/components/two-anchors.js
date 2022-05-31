@@ -1,16 +1,8 @@
-import { twoAnchorsTemplate } from "../templates";
+import { twoAnchorsTemplate } from "../templates"
 
-import {
-  getTabs,
-  getElems,
-  signInTab,
-  signUpTab
-} from "../helpers"
+import { getTabs, getElems, signInTab, signUpTab } from "../helpers"
 
-import {
-  showSignIn,
-  showSignUp
-} from "../callbacks"
+import {  showSignIn, showSignUp } from "../callbacks"
 
 class TwoAnchors extends HTMLElement {
   constructor () {

@@ -1,7 +1,8 @@
 import {
   passwordErrorSignUp,
   passwordSignUpInfo,
-  validateForm} from "../helpers"
+  validateForm
+} from "../helpers"
 
 import { passwordRule } from "../configs"
 

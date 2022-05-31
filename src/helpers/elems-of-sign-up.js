@@ -7,7 +7,8 @@ let
   avatarSelectSignUp,
   avatarPictureSignUp,
   avatarErrorSignUp,
-  submitSignUp
+  submitSignUp,
+  congratsSignUp
 
 export function getSignUpElems (shadow) {
   [
@@ -19,7 +20,8 @@ export function getSignUpElems (shadow) {
     avatarSelectSignUp,
     avatarPictureSignUp,
     avatarErrorSignUp,
-    submitSignUp
+    submitSignUp,
+    congratsSignUp
   ] = [
     'login',
     'login-error',
@@ -29,7 +31,8 @@ export function getSignUpElems (shadow) {
     'avatar-select',
     'avatar-picture',
     'avatar-error',
-    'submit'
+    'submit',
+    'congrats'
   ].map(id => shadow.querySelector(`#${id}`))
 }
 
@@ -42,5 +45,6 @@ export {
   avatarSelectSignUp,
   avatarPictureSignUp,
   avatarErrorSignUp,
-  submitSignUp
+  submitSignUp,
+  congratsSignUp
 }

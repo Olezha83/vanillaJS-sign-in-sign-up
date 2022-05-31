@@ -18,5 +18,5 @@ export {
   signUpElement,
   signInElement,
   signUpTab,
-  signInTab,
+  signInTab
 }

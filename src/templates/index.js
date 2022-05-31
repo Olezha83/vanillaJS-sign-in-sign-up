@@ -1,8 +1,8 @@
-import { twoAnchorsTemplate } from "./twoAnchorsTemplate";
+import { twoAnchorsTemplate } from "./twoAnchorsTemplate"
 
-import { signInTemplate } from "./signInTemplate";
+import { signInTemplate } from "./signInTemplate"
 
-import { signUpTemplate } from "./signUpTemplate";
+import { signUpTemplate } from "./signUpTemplate"
 
 export {
   twoAnchorsTemplate,

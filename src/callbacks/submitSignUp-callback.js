@@ -1,5 +1,11 @@
 import { origin } from "../configs"
-import { avatarPictureSignUp, loginSignUp, passwordSignUp } from "../helpers"
+
+import {
+  avatarPictureSignUp,
+  congratsSignUp,
+  loginSignUp,
+  passwordSignUp
+} from "../helpers"
 
 export const submitSignUpCallback = () => {
   fetch(`${origin}/user/${loginSignUp.value}`, {
@@ -11,5 +17,9 @@ export const submitSignUpCallback = () => {
       password: passwordSignUp.value,
       avatar: avatarPictureSignUp.src
     })
+  })
+
+  Object.assign(congratsSignUp.style, {
+    display: 'block'
   })
 }

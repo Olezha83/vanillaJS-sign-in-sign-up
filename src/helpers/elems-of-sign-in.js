@@ -8,8 +8,4 @@ export function getSignInElems (shadow) {
   ].map(id => shadow.querySelector(`#${id}`))
 }
 
-export {
-  loginSignIn,
-  passwordSignIn,
-  submitSignIn
-}
+export { loginSignIn, passwordSignIn, submitSignIn }

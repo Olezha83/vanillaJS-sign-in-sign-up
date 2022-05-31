@@ -1,7 +1,4 @@
-import {
-  passwordSignUpInfo,
-  passwordErrorSignUp
-} from "../helpers"
+import { passwordSignUpInfo, passwordErrorSignUp } from "../helpers"
 
 export const passwordSignUpOnFocusCallback = () => {
   Object.assign(passwordSignUpInfo.style, {

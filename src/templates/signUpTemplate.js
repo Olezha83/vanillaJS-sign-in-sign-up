@@ -35,6 +35,11 @@ export const signUpTemplate = `
     <div id="button-paragraph">
       <button id="submit" disabled>Sign up</button>
     </div>
+
+    <div id="congrats">
+      <p>Congratulations!</p>
+      <p>You are registered now!</p>
+    </div>
   </div>
   
   <style>
@@ -64,14 +69,14 @@ export const signUpTemplate = `
       border-radius: 50%;
     }
 
-    #login-error, #password-error, #avatar-error {
+    #login-error, #password-error, #avatar-error, #congrats {
       display: none;
       border: 1px solid #f00;
       margin: 4px 0;
       background: #f004;
     }
 
-    #login-error>p, #password-error>p, #avatar-error>p {
+    #login-error>p, #password-error>p, #avatar-error>p, #congrats>p {
       text-align: center;
       margin: 0;
       font-style: italic;
@@ -99,6 +104,16 @@ export const signUpTemplate = `
     #password-info span {
       position: relative;
       left: -3px;
+    }
+
+    #congrats {
+      margin-top: 8px;
+      border: 1px solid #090;
+      background: #0904;
+    }
+
+    #congrats>p:first-child {
+      text-transform: uppercase;
     }
     
     .field-heading {
