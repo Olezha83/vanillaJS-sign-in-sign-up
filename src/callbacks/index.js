@@ -1,16 +1,16 @@
-import { showSignIn, showSignUp } from "./switch-components"
+import { showSignIn, showSignUp } from './switch-components'
 
-import { loginSignUpCallback } from "./loginSignUp-callback"
+import { loginSignUpCallback } from './loginSignUp-callback'
 
-import { passwordSignUpOnFocusCallback } from "./passwordSignUpOnFocus-callback"
+import { passwordSignUpOnFocusCallback } from './passwordSignUpOnFocus-callback'
 
-import { passwordSignUpCallback } from "./passwordSignUp-callback"
+import { passwordSignUpCallback } from './passwordSignUp-callback'
 
-import { avatarSignUpCallback } from "./avatarSignUp-callback"
+import { avatarSignUpCallback } from './avatarSignUp-callback'
 
-import { avatarSignUpClearErrorCallback } from "./avatarSignUpClearError-callback"
+import { avatarSignUpClearErrorCallback } from './avatarSignUpClearError-callback'
 
-import { submitSignUpCallback } from "./submitSignUp-callback"
+import { submitSignUpCallback } from './submitSignUp-callback'
 
 export {
   showSignIn,

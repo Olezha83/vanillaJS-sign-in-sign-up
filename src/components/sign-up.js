@@ -1,4 +1,4 @@
-import { signUpTemplate } from "../templates"
+import { signUpTemplate } from '../templates'
 
 import {
   loginSignUp,
@@ -7,7 +7,7 @@ import {
   avatarPictureSignUp,
   submitSignUp,
   getSignUpElems
-} from "../helpers"
+} from '../helpers'
 
 import {
   loginSignUpCallback,
@@ -16,7 +16,7 @@ import {
   avatarSignUpCallback,
   avatarSignUpClearErrorCallback,
   submitSignUpCallback
-} from "../callbacks"
+} from '../callbacks'
 
 class SignUp extends HTMLElement {
   constructor () {

@@ -3,7 +3,7 @@ import {
   loginSignUp,
   loginErrorSignUp, 
   validateForm
-} from "../helpers"
+} from '../helpers'
 
 export const loginSignUpCallback = async (event) => {
   const response = await validateLoginSignUp(event.target.value)

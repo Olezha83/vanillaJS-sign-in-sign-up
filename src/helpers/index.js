@@ -5,7 +5,7 @@ import {
   signInTab,
   getTabs,
   getElems
-} from "./tabs-and-components-refs"
+} from './tabs-and-components-refs'
 
 import {
   loginSignUp,
@@ -19,18 +19,18 @@ import {
   submitSignUp,
   congratsSignUp,
   getSignUpElems
-} from "./elems-of-sign-up"
+} from './elems-of-sign-up'
 
 import {
   loginSignIn,
   passwordSignIn,
   submitSignIn,
   getSignInElems
-} from "./elems-of-sign-in"
+} from './elems-of-sign-in'
 
-import { validateLoginSignUp } from "./validateLoginSignUp"
+import { validateLoginSignUp } from './validateLoginSignUp'
 
-import { validateForm } from "./validateForm"
+import { validateForm } from './validateForm'
 
 export {
   signUpElement,

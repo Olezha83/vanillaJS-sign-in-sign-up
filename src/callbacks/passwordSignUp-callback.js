@@ -2,9 +2,9 @@ import {
   passwordErrorSignUp,
   passwordSignUpInfo,
   validateForm
-} from "../helpers"
+} from '../helpers'
 
-import { passwordRule } from "../configs"
+import { passwordRule } from '../configs'
 
 export const passwordSignUpCallback = (event) => {
   passwordRule.test(event.target.value)

@@ -1,11 +1,11 @@
-import { origin } from "../configs"
+import { origin } from '../configs'
 
 import {
   avatarPictureSignUp,
   congratsSignUp,
   loginSignUp,
   passwordSignUp
-} from "../helpers"
+} from '../helpers'
 
 export const submitSignUpCallback = () => {
   fetch(`${origin}/user/${loginSignUp.value}`, {

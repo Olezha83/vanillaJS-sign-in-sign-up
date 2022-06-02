@@ -1,4 +1,4 @@
-import { avatarErrorSignUp, validateForm } from "../helpers"
+import { avatarErrorSignUp, validateForm } from '../helpers'
 
 export function avatarSignUpCallback (file, picture) {
   if (file.type.indexOf('image')) {

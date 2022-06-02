@@ -1,4 +1,4 @@
-import { avatarErrorSignUp } from "../helpers"
+import { avatarErrorSignUp } from '../helpers'
 
 export function avatarSignUpClearErrorCallback () {
   Object.assign(avatarErrorSignUp.style, {

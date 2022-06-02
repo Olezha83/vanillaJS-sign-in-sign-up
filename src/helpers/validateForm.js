@@ -6,7 +6,7 @@ import {
   avatarErrorSignUp,
   avatarSelectSignUp,
   submitSignUp
-} from "."
+} from '.'
 
 export function validateForm () {
   if (

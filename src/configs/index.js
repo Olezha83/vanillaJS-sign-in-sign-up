@@ -1,6 +1,6 @@
-import { origin } from "./origin"
+import { origin } from './origin'
 
-import { passwordRule } from "./password-rule"
+import { passwordRule } from './password-rule'
 
 export {
   origin,

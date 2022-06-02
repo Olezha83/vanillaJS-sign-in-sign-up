@@ -1,11 +1,11 @@
-import { signInTemplate } from "../templates"
+import { signInTemplate } from '../templates'
 
 import {
   loginSignIn,
   passwordSignIn,
   submitSignIn,
   getSignInElems
-} from "../helpers"
+} from '../helpers'
 
 class SignIn extends HTMLElement {
   constructor () {
