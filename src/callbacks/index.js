@@ -1,6 +1,6 @@
 import { showSignIn, showSignUp } from './switch-components'
 
-import { loginSignUpCallback } from './loginSignUp-callback'
+import { loginSignUpCallback, isLoginChecked } from './loginSignUp-callback'
 
 import { passwordSignUpOnFocusCallback } from './passwordSignUpOnFocus-callback'
 
@@ -16,6 +16,7 @@ export {
   showSignIn,
   showSignUp,
   loginSignUpCallback,
+  isLoginChecked,
   passwordSignUpOnFocusCallback,
   passwordSignUpCallback,
   avatarSignUpCallback,

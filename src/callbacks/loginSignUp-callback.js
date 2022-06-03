@@ -5,8 +5,12 @@ import {
   validateForm
 } from '../helpers'
 
+let isLoginChecked
+
 export const loginSignUpCallback = async (event) => {
   const response = await validateLoginSignUp(event.target.value)
+
+  isLoginChecked = true
   
   if (response) {
     Object.assign(loginErrorSignUp.style, {
@@ -22,3 +26,5 @@ export const loginSignUpCallback = async (event) => {
 
   validateForm()
 }
+
+export { isLoginChecked }

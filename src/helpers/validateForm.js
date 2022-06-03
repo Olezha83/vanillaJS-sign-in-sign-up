@@ -8,6 +8,8 @@ import {
   submitSignUp
 } from '.'
 
+import { isLoginChecked } from '../callbacks'
+
 export function validateForm () {
   if (
     (!loginErrorSignUp.style.display && loginSignUp.value)
@@ -15,7 +17,9 @@ export function validateForm () {
     (!passwordErrorSignUp.style.display && passwordSignUp.value)
     && 
     (!avatarErrorSignUp.style.display && avatarSelectSignUp.value)
+    &&
+    isLoginChecked
   ) {
-    submitSignUp.disabled = false
+    submitSignUp.disabsled = false
   }
 }
