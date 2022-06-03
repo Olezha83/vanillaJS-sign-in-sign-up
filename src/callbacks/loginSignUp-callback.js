@@ -7,7 +7,7 @@ import {
 
 let isLoginChecked
 
-export const loginSignUpCallback = async (event) => {
+const loginSignUpCallback = async (event) => {
   const response = await validateLoginSignUp(event.target.value)
 
   isLoginChecked = true
@@ -27,4 +27,7 @@ export const loginSignUpCallback = async (event) => {
   validateForm()
 }
 
-export { isLoginChecked }
+export {
+  loginSignUpCallback,
+  isLoginChecked
+}

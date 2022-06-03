@@ -20,6 +20,6 @@ export function validateForm () {
     &&
     isLoginChecked
   ) {
-    submitSignUp.disabsled = false
+    submitSignUp.disabled = false
   }
 }
