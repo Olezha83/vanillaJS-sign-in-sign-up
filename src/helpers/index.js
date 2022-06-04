@@ -23,14 +23,17 @@ import {
 
 import {
   loginSignIn,
+  loginErrorSignIn,
   passwordSignIn,
+  passwordErrorSignIn,
   submitSignIn,
+  congratsSignIn,
   getSignInElems
 } from './elems-of-sign-in'
 
-import { validateLoginSignUp } from './validateLoginSignUp'
+import { validateLogin } from './validateLogin'
 
-import { validateForm } from './validateForm'
+import { validateFormSignUp } from './validateFormSignUp'
 
 export {
   signUpElement,
@@ -51,9 +54,12 @@ export {
   congratsSignUp,
   getSignUpElems,
   loginSignIn,
+  loginErrorSignIn,
   passwordSignIn,
+  passwordErrorSignIn,
   submitSignIn,
+  congratsSignIn,
   getSignInElems,
-  validateLoginSignUp,
-  validateForm
+  validateLogin,
+  validateFormSignUp
 }

@@ -1,16 +1,16 @@
 import {
-  validateLoginSignUp,
+  validateLogin,
   loginSignUp,
   loginErrorSignUp, 
-  validateForm
+  validateFormSignUp
 } from '../helpers'
 
-let isLoginChecked
+let isLoginCheckedSignUp
 
 const loginSignUpCallback = async (event) => {
-  const response = await validateLoginSignUp(event.target.value)
+  const response = await validateLogin(event.target.value)
 
-  isLoginChecked = true
+  isLoginCheckedSignUp = true
   
   if (response) {
     Object.assign(loginErrorSignUp.style, {
@@ -24,10 +24,10 @@ const loginSignUpCallback = async (event) => {
     })
   }
 
-  validateForm()
+  validateFormSignUp()
 }
 
 export {
   loginSignUpCallback,
-  isLoginChecked
+  isLoginCheckedSignUp
 }

@@ -2,10 +2,10 @@ import { signInTemplate } from '../templates'
 
 import {
   loginSignIn,
-  passwordSignIn,
-  submitSignIn,
   getSignInElems
 } from '../helpers'
+
+import { loginSignInCallback } from '../callbacks'
 
 class SignIn extends HTMLElement {
   constructor () {
@@ -17,6 +17,7 @@ class SignIn extends HTMLElement {
   }
 
   connectedCallback () {
+    loginSignIn.onblur = loginSignInCallback
     this.setAttribute('display', 'none')
   }
 
@@ -28,6 +29,10 @@ class SignIn extends HTMLElement {
     Object.assign(this.wrapper.style, {
       display: newVal
     })
+  }
+
+  disconnectedCallback () {
+    loginSignIn.onblur = null
   }
 }
 

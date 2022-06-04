@@ -1,7 +1,7 @@
 import {
   passwordErrorSignUp,
   passwordSignUpInfo,
-  validateForm
+  validateFormSignUp
 } from '../helpers'
 
 import { passwordRule } from '../configs'
@@ -15,5 +15,5 @@ export const passwordSignUpCallback = (event) => {
       display: 'block'
     })
   
-  validateForm()
+  validateFormSignUp()
 }

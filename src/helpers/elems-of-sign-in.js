@@ -1,11 +1,35 @@
-let loginSignIn, passwordSignIn, submitSignIn
+let
+  loginSignIn,
+  loginErrorSignIn,
+  passwordSignIn,
+  passwordErrorSignIn,
+  submitSignIn,
+  congratsSignIn
 
-export function getSignInElems (shadow) {
-  [loginSignIn, passwordSignIn, submitSignIn] = [
+function getSignInElems (shadow) {
+  [
+    loginSignIn,
+    loginErrorSignIn,
+    passwordSignIn,
+    passwordErrorSignIn,
+    submitSignIn,
+    congratsSignIn
+  ] = [
     'login',
+    'login-error',
     'password',
-    'submit'
+    'password-error',
+    'submit',
+    'congrats'
   ].map(id => shadow.querySelector(`#${id}`))
 }
 
-export { loginSignIn, passwordSignIn, submitSignIn }
+export {
+  loginSignIn,
+  loginErrorSignIn,
+  passwordSignIn,
+  passwordErrorSignIn,
+  submitSignIn,
+  congratsSignIn,
+  getSignInElems
+}
