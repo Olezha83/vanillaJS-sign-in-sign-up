@@ -1,17 +1,20 @@
 import {
   loginSignIn,
   loginErrorSignIn,
-  validateLogin
+  getUserDetails
 } from "../helpers"
 
 let isLoginCheckedSignIn
 
 const loginSignInCallback = async (event) => {
-  const response = await validateLogin(event.target.value)
+  const response = await getUserDetails(event.target.value)
 
   isLoginCheckedSignIn = true
 
-  if (!response) {
+  if (response) {
+    localStorage.setItem('password', response.password)
+    localStorage.setItem('avatar', response.avatar)  
+  } else {
     Object.assign(loginErrorSignIn.style, {
       display: 'block'
     })

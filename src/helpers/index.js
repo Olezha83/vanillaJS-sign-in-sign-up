@@ -35,6 +35,8 @@ import { validateLogin } from './validateLogin'
 
 import { validateFormSignUp } from './validateFormSignUp'
 
+import { getUserDetails } from './getUserDetails'
+
 export {
   signUpElement,
   signInElement,
@@ -61,5 +63,6 @@ export {
   congratsSignIn,
   getSignInElems,
   validateLogin,
-  validateFormSignUp
+  validateFormSignUp,
+  getUserDetails
 }
