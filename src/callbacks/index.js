@@ -14,6 +14,10 @@ import { submitSignUpCallback } from './submitSignUp-callback'
 
 import { loginSignInCallback, isLoginCheckedSignIn } from './loginSignIn-callback'
 
+import { passwordSignInCallback } from './passwordSignIn-callback'
+
+import { passwordSignInOnFocusCallback } from './passwordSignInOnFocus-callback'
+
 export {
   showSignIn,
   showSignUp,
@@ -25,5 +29,7 @@ export {
   avatarSignUpClearErrorCallback,
   submitSignUpCallback,
   loginSignInCallback,
-  isLoginCheckedSignIn
+  isLoginCheckedSignIn,
+  passwordSignInCallback,
+  passwordSignInOnFocusCallback
 }

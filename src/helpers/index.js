@@ -26,16 +26,19 @@ import {
   loginErrorSignIn,
   passwordSignIn,
   passwordErrorSignIn,
+  avatarParagraphSignIn,
   submitSignIn,
   congratsSignIn,
   getSignInElems
 } from './elems-of-sign-in'
 
-import { validateLogin } from './validateLogin'
+import { validateLoginSignUp } from './validateLoginSignUp'
 
 import { validateFormSignUp } from './validateFormSignUp'
 
-import { getUserDetails } from './getUserDetails'
+import { getUserDetailsSignIn } from './getUserDetailsSignIn'
+
+import { validatePasswordSignIn } from './validatePasswordSignIn'
 
 export {
   signUpElement,
@@ -59,10 +62,12 @@ export {
   loginErrorSignIn,
   passwordSignIn,
   passwordErrorSignIn,
+  avatarParagraphSignIn,
   submitSignIn,
   congratsSignIn,
   getSignInElems,
-  validateLogin,
+  validateLoginSignUp,
   validateFormSignUp,
-  getUserDetails
+  getUserDetailsSignIn,
+  validatePasswordSignIn
 }

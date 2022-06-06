@@ -3,6 +3,7 @@ let
   loginErrorSignIn,
   passwordSignIn,
   passwordErrorSignIn,
+  avatarParagraphSignIn,
   submitSignIn,
   congratsSignIn
 
@@ -12,6 +13,7 @@ function getSignInElems (shadow) {
     loginErrorSignIn,
     passwordSignIn,
     passwordErrorSignIn,
+    avatarParagraphSignIn,
     submitSignIn,
     congratsSignIn
   ] = [
@@ -19,6 +21,7 @@ function getSignInElems (shadow) {
     'login-error',
     'password',
     'password-error',
+    'avatar-paragraph',
     'submit',
     'congrats'
   ].map(id => shadow.querySelector(`#${id}`))
@@ -29,6 +32,7 @@ export {
   loginErrorSignIn,
   passwordSignIn,
   passwordErrorSignIn,
+  avatarParagraphSignIn,
   submitSignIn,
   congratsSignIn,
   getSignInElems

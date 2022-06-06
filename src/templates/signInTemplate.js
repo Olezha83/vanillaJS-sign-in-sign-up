@@ -11,6 +11,8 @@ export const signInTemplate = `
     <div id="password-error">
       <p>Incorrect password</p>
     </div>
+
+    <p class="field-heading" id="avatar-paragraph">Your avatar</p>
     
     <div id="button-paragraph">
       <button id="submit">Sign in</button>
@@ -37,6 +39,20 @@ export const signInTemplate = `
     #button-paragraph {
       text-align: center;
       margin: 16px 0 4px;
+    }
+
+    #avatar-paragraph {
+      display: none;
+    }
+
+    #avatar-picture {
+      display: block;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 1px solid #767676;
+      border-radius: 50%;
     }
 
     #login-error, #password-error, #congrats {
@@ -68,7 +84,7 @@ export const signInTemplate = `
       font-weight: 700;
     }
 
-    .field-heading:first-child {
+    field-heading:first-child {
       margin-top: 2px;
     }
     

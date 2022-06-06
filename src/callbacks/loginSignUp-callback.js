@@ -1,5 +1,5 @@
 import {
-  validateLogin,
+  validateLoginSignUp,
   loginSignUp,
   loginErrorSignUp, 
   validateFormSignUp
@@ -8,7 +8,7 @@ import {
 let isLoginCheckedSignUp
 
 const loginSignUpCallback = async (event) => {
-  const response = await validateLogin(event.target.value)
+  const response = await validateLoginSignUp(event.target.value)
 
   isLoginCheckedSignUp = true
   

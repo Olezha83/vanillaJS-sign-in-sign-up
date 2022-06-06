@@ -2,10 +2,16 @@ import { signInTemplate } from '../templates'
 
 import {
   loginSignIn,
-  getSignInElems
+  passwordSignIn,
+  getSignInElems,
+  submitSignIn
 } from '../helpers'
 
-import { loginSignInCallback } from '../callbacks'
+import {
+  loginSignInCallback,
+  passwordSignInCallback,
+  passwordSignInOnFocusCallback
+} from '../callbacks'
 
 class SignIn extends HTMLElement {
   constructor () {
@@ -18,6 +24,8 @@ class SignIn extends HTMLElement {
 
   connectedCallback () {
     loginSignIn.onblur = loginSignInCallback
+    passwordSignIn.onblur = passwordSignInCallback
+    passwordSignIn.onfocus = passwordSignInOnFocusCallback
     this.setAttribute('display', 'none')
   }
 
@@ -33,6 +41,8 @@ class SignIn extends HTMLElement {
 
   disconnectedCallback () {
     loginSignIn.onblur = null
+    passwordSignIn.onblur = null
+    passwordSignIn.onfocus = null
   }
 }
 
