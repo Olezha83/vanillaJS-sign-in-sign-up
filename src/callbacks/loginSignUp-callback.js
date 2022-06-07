@@ -1,6 +1,5 @@
 import {
   validateLoginSignUp,
-  loginSignUp,
   loginErrorSignUp, 
   validateFormSignUp
 } from '../helpers'
@@ -15,12 +14,6 @@ const loginSignUpCallback = async (event) => {
   if (response) {
     Object.assign(loginErrorSignUp.style, {
       display: 'block'
-    })
-  }
-
-  loginSignUp.onfocus = () => {
-    Object.assign(loginErrorSignUp.style, {
-      display: ''
     })
   }
 

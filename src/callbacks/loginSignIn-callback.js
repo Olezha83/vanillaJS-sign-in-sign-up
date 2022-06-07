@@ -1,5 +1,4 @@
 import {
-  loginSignIn,
   loginErrorSignIn,
   getUserDetailsSignIn
 } from "../helpers"
@@ -17,12 +16,6 @@ const loginSignInCallback = async (event) => {
   } else {
     Object.assign(loginErrorSignIn.style, {
       display: 'block'
-    })
-  }
-
-  loginSignIn.onfocus = () => {
-    Object.assign(loginErrorSignIn.style, {
-      display: ''
     })
   }
 }

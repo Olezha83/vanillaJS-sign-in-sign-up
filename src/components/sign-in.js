@@ -9,8 +9,10 @@ import {
 
 import {
   loginSignInCallback,
+  loginSignInClearErrorCallback,
   passwordSignInCallback,
-  passwordSignInOnFocusCallback
+  passwordSignInClearErrorCallback,
+  submitSignInCallback
 } from '../callbacks'
 
 class SignIn extends HTMLElement {
@@ -23,9 +25,11 @@ class SignIn extends HTMLElement {
   }
 
   connectedCallback () {
-    loginSignIn.onblur = loginSignInCallback
+    loginSignIn.onblur = loginSignInCallback,
+    loginSignIn.onfocus = loginSignInClearErrorCallback
     passwordSignIn.onblur = passwordSignInCallback
-    passwordSignIn.onfocus = passwordSignInOnFocusCallback
+    passwordSignIn.onfocus = passwordSignInClearErrorCallback
+    submitSignIn.onclick = submitSignInCallback
     this.setAttribute('display', 'none')
   }
 
@@ -41,8 +45,10 @@ class SignIn extends HTMLElement {
 
   disconnectedCallback () {
     loginSignIn.onblur = null
+    loginSignIn.onfocus = null
     passwordSignIn.onblur = null
     passwordSignIn.onfocus = null
+    submitSignIn.onclick = null
   }
 }
 

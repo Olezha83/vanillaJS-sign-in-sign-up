@@ -11,8 +11,9 @@ import {
 
 import {
   loginSignUpCallback,
-  passwordSignUpOnFocusCallback,
+  loginSignUpClearErrorCallback,
   passwordSignUpCallback,
+  passwordSignUpClearErrorCallback,
   avatarSignUpCallback,
   avatarSignUpClearErrorCallback,
   submitSignUpCallback
@@ -29,7 +30,8 @@ class SignUp extends HTMLElement {
 
   connectedCallback () {
     loginSignUp.onblur = loginSignUpCallback
-    passwordSignUp.onfocus = passwordSignUpOnFocusCallback
+    loginSignUp.onfocus = loginSignUpClearErrorCallback
+    passwordSignUp.onfocus = passwordSignUpClearErrorCallback
     passwordSignUp.onblur = passwordSignUpCallback
     avatarSelectSignUp.onchange = event => {
       avatarSignUpCallback(event.target.files[0], avatarPictureSignUp)
@@ -51,6 +53,7 @@ class SignUp extends HTMLElement {
 
   disconnectedCallback () {
     loginSignUp.onblur = null
+    loginSignUp.onfocus = null
     passwordSignUp.onfocus = null
     passwordSignUp.onblur = null
     avatarSelectSignUp.onchange = null

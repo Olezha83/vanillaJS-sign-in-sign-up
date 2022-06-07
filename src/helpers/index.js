@@ -40,6 +40,10 @@ import { getUserDetailsSignIn } from './getUserDetailsSignIn'
 
 import { validatePasswordSignIn } from './validatePasswordSignIn'
 
+import { validateFormSignIn } from './validateFormSignIn'
+
+import { showAvatarSignIn } from './showAvatarSignIn'
+
 export {
   signUpElement,
   signInElement,
@@ -69,5 +73,7 @@ export {
   validateLoginSignUp,
   validateFormSignUp,
   getUserDetailsSignIn,
-  validatePasswordSignIn
+  validatePasswordSignIn,
+  validateFormSignIn,
+  showAvatarSignIn
 }

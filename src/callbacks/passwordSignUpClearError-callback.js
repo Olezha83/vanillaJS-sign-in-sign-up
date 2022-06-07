@@ -1,6 +1,6 @@
 import { passwordSignUpInfo, passwordErrorSignUp } from '../helpers'
 
-export const passwordSignUpOnFocusCallback = () => {
+export const passwordSignUpClearErrorCallback = () => {
   Object.assign(passwordSignUpInfo.style, {
     display: 'block'
   })

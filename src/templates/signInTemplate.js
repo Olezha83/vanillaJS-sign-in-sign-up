@@ -84,7 +84,7 @@ export const signInTemplate = `
       font-weight: 700;
     }
 
-    field-heading:first-child {
+    .field-heading:first-child {
       margin-top: 2px;
     }
     
