@@ -7,14 +7,18 @@ import {
   passwordSignUp
 } from '../helpers'
 
+const hash = require('hash-converter');
+
 export const submitSignUpCallback = () => {
+  const digest = hash.SHA256(passwordSignUp.value);
+
   fetch(`${origin}/user/${loginSignUp.value}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      password: passwordSignUp.value,
+      password: digest,
       avatar: avatarPictureSignUp.src
     })
   })

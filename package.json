@@ -11,5 +11,8 @@
     "sign-up"
   ],
   "author": "Oleg83-IT",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "hash-converter": "^1.0.2"
+  }
 }
