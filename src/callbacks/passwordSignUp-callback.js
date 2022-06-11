@@ -8,12 +8,15 @@ import { passwordRule } from '../configs'
 
 export const passwordSignUpCallback = (event) => {
   passwordRule.test(event.target.value)
-    ? Object.assign(passwordSignUpInfo.style, {
-      display: ''
-    })
+    ? setTimeout (() => {
+        Object.assign(passwordSignUpInfo.style, {
+          display: ''
+        })
+      }, 300)
+      
     : Object.assign(passwordErrorSignUp.style, {
-      display: 'block'
-    })
+        display: 'block'
+      })
   
   validateFormSignUp()
 }
