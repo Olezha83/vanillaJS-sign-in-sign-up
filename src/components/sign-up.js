@@ -31,8 +31,8 @@ class SignUp extends HTMLElement {
   connectedCallback () {
     loginSignUp.onblur = loginSignUpCallback
     loginSignUp.onfocus = loginSignUpClearErrorCallback
-    passwordSignUp.onfocus = passwordSignUpClearErrorCallback
     passwordSignUp.onblur = passwordSignUpCallback
+    passwordSignUp.onfocus = passwordSignUpClearErrorCallback
     avatarSelectSignUp.onchange = event => {
       avatarSignUpCallback(event.target.files[0], avatarPictureSignUp)
     }
@@ -54,8 +54,8 @@ class SignUp extends HTMLElement {
   disconnectedCallback () {
     loginSignUp.onblur = null
     loginSignUp.onfocus = null
-    passwordSignUp.onfocus = null
     passwordSignUp.onblur = null
+    passwordSignUp.onfocus = null
     avatarSelectSignUp.onchange = null
     avatarSelectSignUp.onclick = null
     submitSignUp.onclick = null

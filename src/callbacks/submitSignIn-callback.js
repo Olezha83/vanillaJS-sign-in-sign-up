@@ -6,12 +6,14 @@ import {
 
 export const submitSignInCallback = () => {
   if (validateFormSignIn()) {
-    showAvatarSignIn()
+    setTimeout(() => {
+      showAvatarSignIn()
+    }, 300)
 
     setTimeout(() => {
       Object.assign(congratsSignIn.style, {
         display: 'block'
       })
-    }, 500)
+    }, 600)
   }
 }

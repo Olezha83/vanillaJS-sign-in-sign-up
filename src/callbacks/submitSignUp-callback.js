@@ -22,8 +22,10 @@ export const submitSignUpCallback = () => {
       avatar: avatarPictureSignUp.src
     })
   })
-
-  Object.assign(congratsSignUp.style, {
-    display: 'block'
-  })
+  
+  setTimeout(() => {
+    Object.assign(congratsSignUp.style, {
+      display: 'block'
+    })
+  }, 300)
 }
